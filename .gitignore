@@ -8,7 +8,7 @@ UnityDemo/[Ll]ogs/
 UnityDemo/[Uu]ser[Ss]ettings/
 UnityDemo/Assets/Plugins/Sirenix/
 UnityDemo/Assets/StompyRobot/
-
+.idea/
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 UnityDemo/[Mm]emoryCaptures/
