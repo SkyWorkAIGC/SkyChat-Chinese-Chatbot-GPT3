@@ -7,7 +7,7 @@
 ## 模型服务以及Python环境搭建  
 ## Windows
 1. 下载[Anaconda](https://www.anaconda.com/) 勾选添加到环境变量选项  
-<img src="./p/2c75f4cd-d1c1-4e9d-96b2-96c4c246c18b.jpeg" width = "500" height = "330" alt="图片名称" align=center />
+      <img src="./p/2c75f4cd-d1c1-4e9d-96b2-96c4c246c18b.jpeg" width = "500" height = "330" alt="图片名称" align=center />
 2. 下载并解压[semantic_score_clean](tbd)和[user_profile_clean](tbd)服务、模型以及示例训练数据   
 3. 打开Anaconda 输入  
       `conda create -n semantic`创建新环境  
