@@ -10,20 +10,22 @@
       <img src="./p/2c75f4cd-d1c1-4e9d-96b2-96c4c246c18b.jpeg" width = "500" height = "330" alt="图片名称" align=center />
 2. 下载并解压[semantic_score_clean](tbd)和[user_profile_clean](tbd)服务、模型以及示例训练数据   
 3. 打开Anaconda 输入  
-      `conda create -n semantic`创建新环境  
-      `conda info --envs`查看环境   
-      `activate semantic`启动环境   
-      `cd C:\你的路径\semantic_score_clean\semantic_score_clean`cd到解压好的semantic_score_clean文件夹  
-      `pip install -r requirements.txt`安装所需依赖包   
-      `python semantic_score_api.py`运行服务
+      `conda create -n semantic` 创建新环境  
+      `conda info --envs` 查看环境   
+      `activate semantic` 启动环境   
+      `cd C:\你的路径\semantic_score_clean\semantic_score_clean` cd到解压好的semantic_score_clean文件夹  
+      `python -m pip uninstall numpy` 删掉初始自带的numpy  
+      `python -m pip install -r requirements.txt` 或者 `pip install -r requirements.txt` 安装所需依赖包   
+      `python semantic_score_api.py` 运行服务
 4. [下载对应系统的Cuda并安装](https://developer.nvidia.com/cuda-downloads)
-5. 打开一个新的Anaconda界面 输入
+5. 打开一个新的Anaconda界面 输入  
    `conda create -n userprofile`创建新环境  
    `conda info --envs`查看环境   
    `activate userprofile`启动环境   
-   `cd C:\你的路径\user_profile_clean\user_profile_clean`cd到解压好的user_profile_clean文件夹  
-   `pip install -r requirements.txt`安装所需依赖包   
-   `pip install torch==1.11.0+cu115 -f https://download.pytorch.org/whl/torch_stable.html` 下载cuda版torch      
+   `cd C:\你的路径\user_profile_clean\user_profile_clean`cd  到解压好的user_profile_clean文件夹  
+   `python -m pip uninstall numpy`  删掉初始自带的numpy   
+   `python -m pip install -r requirements.txt` 或者 `pip install -r requirements.txt`安装所需依赖包   
+   `python -m pip install torch==1.11.0+cu115 -f https://download.pytorch.org/whl/torch_stable.html` 下载cuda版torch      
    `python server_v3.py`运行服务
 
 ## Linux
