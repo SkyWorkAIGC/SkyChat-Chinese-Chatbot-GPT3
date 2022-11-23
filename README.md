@@ -28,12 +28,6 @@
    `python -m pip install torch==1.11.0+cu115 -f https://download.pytorch.org/whl/torch_stable.html` 下载cuda版torch      
    `python server_v3.py`运行服务
 
-## Linux
-1. 部署本地python和cuda环境
-2. unzip压缩包
-3. 下载依赖包
-4. 之后同windows版
-
 ***
 ## Unity版Demo
 1.  Release中下载最新的包。
