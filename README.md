@@ -37,6 +37,13 @@
 5.  开聊
 ***
 ## Python版Demo
-### 开发中。。。
+1. 打开Anaconda 输入  
+    `conda create -n talk` 创建新环境  
+    `conda info --envs` 查看环境   
+    `activate talk` 启动环境   
+    `cd C:\你的路径\OpenAPIDemo\PythonDemo` 导航到代码所在的文件夹  
+    `python -m pip install requests` 下载依赖资源  
+    `python main.py` 开始聊天（需确认2个服务以开启） 
+2. 可在脚本中 修改各参数
 ***
 ##### *最低配置要求Nvidia Gfx 1060
