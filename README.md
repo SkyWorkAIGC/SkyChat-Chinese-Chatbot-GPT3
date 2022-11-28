@@ -37,13 +37,14 @@
 5.  开聊
 ***
 ## Python版Demo
-1. 打开Anaconda 输入  
+1. [在openAPI网站](https://openapi.singularity-ai.com/index.html#/login) 或demo中点击注册 注册并认证 获得 api-key 和 api-secret  
+2. 打开 `\你的路径\OpenAPIDemo\PythonDemo\main.py` 在对应位置填入api-key 和 api-secret 并修改需要修改的参数  
+3. 打开Anaconda 输入  
     `conda create -n talk` 创建新环境  
     `conda info --envs` 查看环境   
     `activate talk` 启动环境   
     `cd C:\你的路径\OpenAPIDemo\PythonDemo` 导航到代码所在的文件夹  
     `python -m pip install requests` 下载依赖资源  
-    `python main.py` 开始聊天（需确认2个服务以开启） 
-2. 可在脚本中 修改各参数
+    `python main.py` 开始聊天（需确认2个服务以开启）  
 ***
 ##### *最低配置要求Nvidia Gfx 1060
