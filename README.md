@@ -38,7 +38,8 @@
 ***
 ## Python版Demo
 1. [在openAPI网站](https://openapi.singularity-ai.com/index.html#/login) 或demo中点击注册 注册并认证 获得 api-key 和 api-secret  
-2. 打开 `\你的路径\OpenAPIDemo\PythonDemo\main.py` 在对应位置填入api-key 和 api-secret 并修改需要修改的参数  
+2. 打开 `\你的路径\OpenAPIDemo\PythonDemo\main.py` 在对应位置填入api-key 和 api-secret 并修改需要修改的参数
+   <img src="./p/ZmTZD3SgRo.jpg" width = "800" height = "330" alt="图片名称" align=center />
 3. 打开Anaconda 输入  
     `conda create -n talk` 创建新环境  
     `conda info --envs` 查看环境   
