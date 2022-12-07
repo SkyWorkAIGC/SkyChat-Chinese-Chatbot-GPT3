@@ -5,23 +5,35 @@ import requests
 import time
 import hashlib
 import json
-
 api_key = ''  # 这里需要替换你的APIKey
 api_secret = ''  # 这里需要替换你的APISecret
-userName = 'tester'
-botName = "小爱"
-botAge = 18
-month = 12
-day = 15
-weekDay = "天"
-season = "冬天"
-weather = "晴天"
-temperature = 15
+from datetime import datetime
 
+userName = 'tester'  # 你的姓名
+botName = "小爱"  # AI姓名
+botAge = 18  # AI年龄
+year = 2022
+month = 12  # 月
+day = 15  # 日
+weekDay = "天"   # 星期几
+season = "冬天"   # 季节
+weather = "晴天"   # 天气
+temperature = 15   # 温度
+meaning_url = 'http://localhost:8000/semantic_score'  # 如部署远程服务器 对应修改请求URL
+property_draw_url = 'http://localhost:8001/triplets'  # 如部署远程服务器 对应修改请求URL
+robot_height = 160
+robot_weight = 45
+robot_chest = 50
+robot_waistline = 10
+robot_hipline = 10
+robot_birth_month = 12
+robot_birth_day = 26
+location = "北京"
+hairdo = "双马尾"
+hair_color = "黑色"
+robot_gender = "女"
 
 url = 'https://openapi.singularity-ai.com/api/v2/generateByKey'
-meaing_url = 'http://localhost:8000/semantic_score'
-property_draw_url = 'http://localhost:8001/triplets'
 conversation = []
 timestamp = str(int(time.time()))
 prompt = '中国是一个伟大的国家'
@@ -102,6 +114,35 @@ def fill_property(meaning_answer):
         meaning_answer = meaning_answer.replace("[user.name]", userName)
     if "[robot.age]" in meaning_answer:
         meaning_answer = meaning_answer.replace("[robot.age]", str(botAge))
+    if "[robot.weight]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.weight]", str(robot_weight))
+    if "[robot.height]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.height]", str(robot_height))
+    if "[robot.chest]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.chest]", str(robot_chest))
+    if "[robot.hipline]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.hipline]", str(robot_hipline))
+    if "[robot.gender_cn]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.gender_cn]", robot_gender)
+    if "[location]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[location]", location)
+    if "[time]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[time]", datetime.now().strftime("%H:%M:%S"))
+    if "[time_interval]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[time_interval]", datetime.now().strftime("%H:%M:%S"))
+    if "[year]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[year]", str(year))
+    if "[month]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[month]", str(month))
+    if "[day]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[day]", str(day))
+    if "[week]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[week]", str(weekDay))
+    if "[season]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[season]", season)
+    if "[temperature]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[temperature]", str(temperature))
+
     return meaning_answer
 
 
