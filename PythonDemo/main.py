@@ -50,8 +50,8 @@ def generate_sent_list():
 def check_meaning(ask):
     input_sent = ask
     sent_list = generate_sent_list()
-    resp = requests.post(meaing_url, data=json.dumps({'input_sent': input_sent, 'sent_list': sent_list, 'threshold': 0.8}),
-                         headers={'content-type': "application/json"}, timeout=0.6)
+    resp = requests.post(meaning_url, data=json.dumps({'input_sent': input_sent, 'sent_list': sent_list, 'threshold': 0.8}),
+                         headers={'content-type': "application/json"}, timeout=5)
 
     if resp.status_code == 200:
         resp_data = json.loads(resp.content)
