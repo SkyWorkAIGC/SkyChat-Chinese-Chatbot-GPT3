@@ -11,6 +11,7 @@ from datetime import datetime
 
 userName = 'tester'  # 你的姓名
 botName = "小爱"  # AI姓名
+userAge = 18
 botAge = 18  # AI年龄
 year = 2022
 month = 12  # 月
@@ -32,6 +33,9 @@ location = "北京"
 hairdo = "双马尾"
 hair_color = "黑色"
 robot_gender = "女"
+userBirthYear = 1992
+userBirthMonth = 5
+userBirthDay = 25
 
 url = 'https://openapi.singularity-ai.com/api/v2/generateByKey'
 conversation = []
@@ -142,7 +146,44 @@ def fill_property(meaning_answer):
         meaning_answer = meaning_answer.replace("[season]", season)
     if "[temperature]" in meaning_answer:
         meaning_answer = meaning_answer.replace("[temperature]", str(temperature))
-
+    if "[robot.place_origin]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.place_origin]", '北京')
+    if "[robot.employed_by_company]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.employed_by_company]", '奇点')
+    if "[robot.has_profession]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.has_profession]", '智能代表')
+    if "[robot.has_ability]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.has_ability]", '跳舞')
+    if "[robot.like_activity]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.like_activity]", '看剧')
+    if "[robot.live_in_citystatecountry]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.live_in_citystatecountry]", '北京')
+    if "[robot.major]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.major]", '土木')
+    if "[robot.constellation]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.constellation]", '射手座')
+    if "[robot.university]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.university]", '北京大学')
+    if "[robot.have_pet]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.have_pet]", '猫')
+    if "[robot.pet_name]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.pet_name]", '小黑')
+    if "[robot.blood]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.blood]", 'B型')
+    if "[robot.hairdo]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.hairdo]", hairdo)
+    if "[robot.hair_color]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.hair_color]", hair_color)
+    if "[robot.have_pet]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[robot.have_pet]", '猫')
+    if "[user.age]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[user.age]", str(userAge))
+    if "[user.birth_year]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[user.birth_year]", str(userBirthYear))
+    if "[user.birth_month]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[user.birth_month]", str(userBirthMonth))
+    if "[user.birth_day]" in meaning_answer:
+        meaning_answer = meaning_answer.replace("[user.birth_day]", str(userBirthDay))
     return meaning_answer
 
 
