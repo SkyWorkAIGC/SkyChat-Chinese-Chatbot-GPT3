@@ -283,12 +283,12 @@ public class Request : MonoBehaviour
 
     public class Param
     {
-        public int generate_length = 200;
-        public int top_p = 1;
-        public int top_k = 5;
-        public float repetition_penalty = 1.0f;
+        public int generate_length = 500;
+        public int top_p = 0.4;
+        public int top_k = 20;
+        public float repetition_penalty = 1.3f;
         public float length_penalty = 1.0f;
-        public int min_len = 5;
+        public int min_len = 4;
         public List<string> bad_words = new List<string>();
         public List<string> end_words = new List<string>()
         {
