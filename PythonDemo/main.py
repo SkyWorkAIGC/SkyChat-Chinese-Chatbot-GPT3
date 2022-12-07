@@ -139,12 +139,12 @@ def talk(ask):
             "prompt": p,
             "model_version": model_version,
             "param": {
-                "generate_length": 200,
-                "top_p": 1,
-                "top_k": 5,
-                "repetition_penalty": 1.0,
+                "generate_length": 500,
+                "top_p": 0.4,
+                "top_k": 20,
+                "repetition_penalty": 1.3,
                 "length_penalty": 1.0,
-                "min_len": 5,
+                "min_len": 4,
                 "bad_words": [],
                 "end_words": ["[EOS]", "\n", "\t"],
                 "temperature": 1.0
