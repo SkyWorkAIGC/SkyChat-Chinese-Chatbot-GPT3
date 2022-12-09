@@ -1,7 +1,7 @@
 # SkyChat
 
 ## 简介
-### SkyChat是一款基于GPT-3 API做的聊天机器人项目。更多细节可见[奇点智源官网文档](https://openapi.singularity-ai.com)
+### SkyChat是一款基于中文GPT-3 API做的聊天机器人项目。更多细节可见[奇点智源官网文档](https://openapi.singularity-ai.com)
 
 # Demo使用教程：
 ## 模型服务以及Python环境搭建  
