@@ -1,7 +1,7 @@
-# OpenAPI-Demo
+# SkyChat
 
 ## 简介
-### 我们的API几乎可以应用于任何涉及理解或生成自然语言或代码的任务。我们提供了一系列具有不同参数级别的模型，适用于不同的任务，以及微调您自己的自定义模型的能力。这些模型可用于从内容生成到语义搜索和分类的所有内容。更多细节可见[奇点智源官网文档](https://openapi.singularity-ai.com)
+### SkyChat是一款基于GPT-3 API做的聊天机器人项目。更多细节可见[奇点智源官网文档](https://openapi.singularity-ai.com)
 
 # Demo使用教程：
 ## 模型服务以及Python环境搭建  
