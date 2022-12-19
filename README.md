@@ -2,7 +2,7 @@
 ### [简体中文](README.CN.md)
 ### [English](README.md)
 ## General
-### SkyChat is a Chat-Bot project based on Chinese GPT3 API. More details at [SingularityAI-OpenAPI](https://openapi.singularity-ai.com)
+### SkyChat is a Chatbot project based on Chinese GPT3 API. More details at [SingularityAI-OpenAPI](https://openapi.singularity-ai.com)
 
 # How to use the Demo：
 ## Set up model and python environment  
