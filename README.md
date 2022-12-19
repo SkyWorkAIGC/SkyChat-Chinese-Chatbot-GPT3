@@ -5,7 +5,7 @@
 ### SkyChat is a Chatbot project based on Chinese GPT3 API. More details at [SingularityAI-OpenAPI](https://openapi.singularity-ai.com)
 
 # How to use the Demo：
-## Set up model and python environment  
+## Set up models and python environment  
 ## Windows
 1. Download [Anaconda](https://www.anaconda.com/) , and select add to path  
       <img src="./p/2c75f4cd-d1c1-4e9d-96b2-96c4c246c18b.jpeg" width = "500" height = "330" alt="图片名称" align=center />
