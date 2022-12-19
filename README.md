@@ -1,51 +1,51 @@
 # SkyChat
+### [简体中文](README.CN.md)
+### [English](README.md)
+## General
+### SkyChat is a Chat-Bot project based on Chinese GPT3 API. More details at [SingularityAI-OpenAPI](https://openapi.singularity-ai.com)
 
-## 简介
-### SkyChat是一款基于中文GPT-3 API做的聊天机器人项目。更多细节可见[奇点智源官网文档](https://openapi.singularity-ai.com)
-
-# Demo使用教程：
-## 模型服务以及Python环境搭建  
+# How to use the Demo：
+## Set up model and python environment  
 ## Windows
-1. 下载[Anaconda](https://www.anaconda.com/) 勾选添加到环境变量选项  
+1. Download [Anaconda](https://www.anaconda.com/) , and select add to path  
       <img src="./p/2c75f4cd-d1c1-4e9d-96b2-96c4c246c18b.jpeg" width = "500" height = "330" alt="图片名称" align=center />
-2. 下载并解压[semantic_score_clean](http://open-dialogue.singularity-ai.com/open_dialogue/share_model/semantic_score_clean.zip)和[user_profile_clean](http://open-dialogue.singularity-ai.com/open_dialogue/share_model/user_profile_clean.zip)服务、模型以及示例训练数据   
-3. 打开Anaconda 输入  
-      `conda create -n semantic` 创建新环境  
-      `conda info --envs` 查看环境   
-      `activate semantic` 启动环境   
-      `cd C:\你的路径\semantic_score_clean\semantic_score_clean` cd到解压好的semantic_score_clean文件夹  
-      `python -m pip uninstall numpy` 删掉初始自带的numpy  
-      `python -m pip install -r requirements.txt` 或者 `pip install -r requirements.txt` 安装所需依赖包   
-      `python semantic_score_api.py` 运行服务
-4. [下载对应系统的Cuda并安装](https://developer.nvidia.com/cuda-downloads)
-5. 打开一个新的Anaconda界面 输入  
-   `conda create -n userprofile`创建新环境  
-   `conda info --envs`查看环境   
-   `activate userprofile`启动环境   
-   `cd C:\你的路径\user_profile_clean\user_profile_clean`cd  到解压好的user_profile_clean文件夹  
-   `python -m pip uninstall numpy`  删掉初始自带的numpy   
-   `python -m pip install -r requirements.txt` 或者 `pip install -r requirements.txt`安装所需依赖包   
-   `python -m pip install torch==1.11.0+cu115 -f https://download.pytorch.org/whl/torch_stable.html` 下载cuda版torch      
-   `python server_v3.py`运行服务
+2. Download and unzip the models and training data [semantic_score_clean](http://open-dialogue.singularity-ai.com/open_dialogue/share_model/semantic_score_clean.zip) and [user_profile_clean](http://open-dialogue.singularity-ai.com/open_dialogue/share_model/user_profile_clean.zip)   
+3. Open an Anaconda prompt and type in the commands   
+      `conda create -n semantic` create new env  
+      `conda info --envs` check environments  
+      `activate semantic` activate it    
+      `cd [YOUR PATH]\semantic_score_clean\semantic_score_clean` navigate to the extracted 'semantic_score_clean' folder    
+      `python -m pip uninstall numpy` Delete the default numpy  
+      `python -m pip install -r requirements.txt`  Install Requirements   
+      `python semantic_score_api.py` Bring semantic service online
+4. [Download Cuda according to your system and install](https://developer.nvidia.com/cuda-downloads)
+5. Open a new anaconda prompt and type in the following 
+   `conda create -n userprofile`create new env   
+   `conda info --envs`check environments    
+   `activate userprofile`activate it  
+   `cd [YOUR PATH]\user_profile_clean\user_profile_clean` navigate to the extracted 'user_profile_clean' folder  
+   `python -m pip uninstall numpy`  Delete the default numpy   
+   `python -m pip install -r requirements.txt` Install Requirements    
+   `python -m pip install torch==1.11.0+cu115 -f https://download.pytorch.org/whl/torch_stable.html` Download torch in cuda version      
+   `python server_v3.py`Bring userprofile service online  
 
 ***
-## Unity版Demo
-1.  Release中下载最新的包。
-2.  [在openAPI网站](https://openapi.singularity-ai.com/index.html#/login) 或demo中点击注册 注册并认证 获得 api-key 和 api-secret
-3.  点击设置 进入设置界面， 对应位置填入key和secret，以及双方姓名，完后点击保存并退出
-4.  确认semantic_score_clean和user_profile_clean服务以部署到本地，如果远程部署请在设置中替换对应请求URL
-5.  开聊
+## Unity Demo
+1.  Download the newest release
+2.  Register [In OpenAPI website](https://openapi.singularity-ai.com/index.html#/login) or inside the Demo to get 'api-key' and 'api-secret'
+3.  Click Setting, inside the setting panel, type in key and secret accordingly, customize the names in your need, click save and exit  
+4.  Make sure 'semantic_score_clean' and 'user_profile_clean' has been set up locally, if you want to set it up remotely, replace the url to your remote host  
+5.  Time to chat!
 ***
-## Python版Demo
-1. [在openAPI网站](https://openapi.singularity-ai.com/index.html#/login) 或demo中点击注册 注册并认证 获得 api-key 和 api-secret  
-2. 打开 `\你的路径\OpenAPIDemo\PythonDemo\main.py` 在对应位置填入api-key 和 api-secret 并修改需要修改的参数
+## Python Demo
+1. Register [In OpenAPI website](https://openapi.singularity-ai.com/index.html#/login) to get 'api-key' and 'api-secret'  
+2. Open `\[YOUR PATH]\OpenAPIDemo\PythonDemo\main.py` fill in key and secret accordingly 
    <img src="./p/ZmTZD3SgRo.jpg" width = "800" height = "330" alt="图片名称" align=center />
-3. 打开Anaconda 输入  
-    `conda create -n talk` 创建新环境  
-    `conda info --envs` 查看环境   
-    `activate talk` 启动环境   
-    `cd C:\你的路径\OpenAPIDemo\PythonDemo` 导航到代码所在的文件夹  
-    `python -m pip install requests` 下载依赖资源  
-    `python main.py` 开始聊天（需确认2个服务以开启）  
+3. Open Anaconda and type in the following 
+    `conda create -n talk` create new env    
+    `activate talk` activate it  
+   `cd \[YOUR PATH]\OpenAPIDemo\PythonDemo` navigate to your Demo path  
+    `python -m pip install requests` Install requirements  
+    `python main.py` Begin to chat（Make sure 'Semantic' and 'UserProfile' services has been set up）  
 ***
-##### *最低配置要求Nvidia Gfx 1060
+##### * Minimum requirement Nvidia Gfx 1060
