@@ -1,8 +1,34 @@
 # SkyChat
 ### [简体中文](README.CN.md)
 ### [English](README.md)
-## General
-### SkyChat is a Chatbot project based on Chinese GPT3 API. More details at [SingularityAI-OpenAPI](https://openapi.singularity-ai.com)
+
+# Brief introduction
+
+#### SkyChat is a chat robot project developed based on the Chinese GPT-3 API. In addition to basic chatting, dialogue, and asking me to answer, it can also support Chinese-English translation, content continuation, couplets, writing ancient poems, generating recipes , third-person reporting, creating interview questions and many other functions.
+![image](https://user-images.githubusercontent.com/120169448/208883662-4ba5dcbc-2443-498d-86e8-059462b89d7e.png)
+
+More details at [SingularityAI-OpenAPI](https://openapi.singularity-ai.com)
+
+#### Here are some show cases:
+
+# Show cases
+
+### Chat
+![image](https://user-images.githubusercontent.com/120169448/208884291-f598368d-951a-4356-967a-f0466f8f069f.png)
+
+### Question and answer
+![image](https://user-images.githubusercontent.com/120169448/208884265-55b0cb1c-48a1-4f42-8ea0-6608b5a551af.png)
+
+### Generate recipes：
+input——
+![image](https://user-images.githubusercontent.com/120169448/208884242-29afcd38-2b8e-451b-9f43-e68b5660f435.png)
+
+output——
+![image](https://user-images.githubusercontent.com/120169448/208884206-b58a626e-85de-4c42-81c3-7e4d4c4da634.png)
+
+### Couplet
+![image](https://user-images.githubusercontent.com/120169448/208884185-dd2043d3-d868-41fd-a495-a034fac6e35c.png)
+
 
 # How to use the Demo：
 ## Set up models and python environment  
