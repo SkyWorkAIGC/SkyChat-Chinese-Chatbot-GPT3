@@ -1,9 +1,32 @@
 # SkyChat
 ### [简体中文](README.CN.md)
 ### [English](README.md)
-## 简介
-### SkyChat是一款基于中文GPT-3 API做的聊天机器人项目。更多细节可见[奇点智源官网文档](https://openapi.singularity-ai.com)
 
+# 模型简介
+#### SkyChat是一款基于中文GPT-3 API研发的聊天机器人项目，它除了基本的聊天、对话、你问我答外，还能支持中英文互译、内容续写、对对联、写古诗、生成菜谱、第三人称转述、创建采访问题等多种功能。
+![image](https://user-images.githubusercontent.com/120169448/208878752-edde0544-2d1b-4513-b498-d118f3ed4c25.png)
+#### 更多细节可见[奇点智源官网文档](https://openapi.singularity-ai.com)
+
+下面是一些示例：
+# 效果示例
+### 聊天
+![image](https://user-images.githubusercontent.com/120169448/208879009-0aefea8b-2183-4b94-b0d0-0351fe3af0d3.png)
+
+### 问答
+![image](https://user-images.githubusercontent.com/120169448/208879023-193723a6-caf9-4ff2-ba01-4c5c017326a8.png)
+
+### 生成菜谱
+输入：
+![image](https://user-images.githubusercontent.com/120169448/208879071-fe0e87fa-c01d-4edb-8b8a-249e6c2e0b72.png)
+
+输出：
+![image](https://user-images.githubusercontent.com/120169448/208879104-3fb89264-5526-4f9f-ace6-508f9a606577.png)
+
+### 对对联
+![image](https://user-images.githubusercontent.com/120169448/208879500-4a7d644d-9d0d-4dc4-a6a4-0b21b5c891ac.png)
+
+
+——————————————————————————————
 # Demo使用教程：
 ## 模型服务以及Python环境搭建
 ## Windows
@@ -49,4 +72,4 @@
    `python -m pip install requests` 下载依赖资源  
    `python main.py` 开始聊天（需确认2个服务以开启）
 ***
-##### *最低配置要求Nvidia Gfx 1060
+#### *最低配置要求Nvidia Gfx 1060
