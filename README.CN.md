@@ -5,11 +5,13 @@
 # 模型简介
 #### SkyChat是一款基于中文GPT-3 API研发的聊天机器人项目，它除了基本的聊天、对话、你问我答外，还能支持中英文互译、内容续写、对对联、写古诗、生成菜谱、第三人称转述、创建采访问题等多种功能。
 ![image](https://user-images.githubusercontent.com/120169448/208878752-edde0544-2d1b-4513-b498-d118f3ed4c25.png)
-#### 更多细节可见[奇点智源官网文档](https://openapi.singularity-ai.com)
+更多细节可见[奇点智源官网文档](https://openapi.singularity-ai.com)
+
 #### 下面是一些示例：
 
 # 效果示例
-体验示例，请访问[奇点智源API试用](https://openapi.singularity-ai.com/index.html#/tryoutIndex)
+体验、试用，请访问[奇点智源API试用](https://openapi.singularity-ai.com/index.html#/tryoutIndex)
+
 ### 聊天
 ![image](https://user-images.githubusercontent.com/120169448/208879009-0aefea8b-2183-4b94-b0d0-0351fe3af0d3.png)
 
