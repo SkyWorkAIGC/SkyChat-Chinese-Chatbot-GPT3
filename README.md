@@ -7,11 +7,12 @@
 #### SkyChat is a chat robot project developed based on the Chinese GPT-3 API. In addition to basic chatting, dialogue, and asking me to answer, it can also support Chinese-English translation, content continuation, couplets, writing ancient poems, generating recipes , third-person reporting, creating interview questions and many other functions.
 ![image](https://user-images.githubusercontent.com/120169448/208883662-4ba5dcbc-2443-498d-86e8-059462b89d7e.png)
 
-More details at [SingularityAI-OpenAPI](https://openapi.singularity-ai.com)
+More details at [Singularity-AI-OpenAPI](https://openapi.singularity-ai.com)
 
 #### Here are some show cases:
 
 # Show cases
+For experience and trial, please visit [Singularity-AI-trail](https://openapi.singularity-ai.com/index.html#/tryoutIndex)
 
 ### Chat
 ![image](https://user-images.githubusercontent.com/120169448/208884291-f598368d-951a-4356-967a-f0466f8f069f.png)
