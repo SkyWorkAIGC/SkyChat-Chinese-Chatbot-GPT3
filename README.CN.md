@@ -7,9 +7,6 @@
 ![image](https://user-images.githubusercontent.com/120169448/208878752-edde0544-2d1b-4513-b498-d118f3ed4c25.png)
 
 更多细节可见[奇点智源官网文档](https://openapi.singularity-ai.com)
-也可以微信扫码加入开发者群——
-![text](https://user-images.githubusercontent.com/120169448/211474572-4e084a69-04d7-4d34-ab93-ef5fc3007b6f.jpg)
-
 
 #### 下面是一些示例：
 
@@ -79,3 +76,8 @@
    `python main.py` 开始聊天（需确认2个服务以开启）
 ***
 #### *最低配置要求Nvidia Gfx 1060
+
+# 加入开发者群
+如果您有问题，不妨微信扫码加入开发者群——
+
+![text](https://user-images.githubusercontent.com/120169448/211474572-4e084a69-04d7-4d34-ab93-ef5fc3007b6f.jpg)
