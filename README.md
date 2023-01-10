@@ -76,3 +76,9 @@ output——
     `python main.py` Begin to chat（Make sure 'Semantic' and 'UserProfile' services has been set up）  
 ***
 ##### * Minimum requirement Nvidia Gfx 1060
+
+# Join in the developer group
+
+If you have any questions, please scan the QR code below with WeChat to join in the developer group:
+
+![text](https://user-images.githubusercontent.com/120169448/211474572-4e084a69-04d7-4d34-ab93-ef5fc3007b6f.jpg)
