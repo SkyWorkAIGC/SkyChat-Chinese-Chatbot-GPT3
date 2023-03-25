@@ -75,7 +75,8 @@
    `python -m pip install requests` 下载依赖资源  
    `python main.py` 开始聊天（需确认2个服务以开启）
 ***
-#### *最低配置要求Nvidia Gfx 1060
+
+#### *最低配置要求Nvidia GTX 1060
 
 # 加入开发者群
 如果您有问题，不妨微信扫码加入开发者群——
