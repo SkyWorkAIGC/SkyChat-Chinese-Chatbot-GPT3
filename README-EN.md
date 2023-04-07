@@ -75,7 +75,7 @@ output——
     `python -m pip install requests` Install requirements  
     `python main.py` Begin to chat（Make sure 'Semantic' and 'UserProfile' services has been set up）  
 ***
-##### * Minimum requirement Nvidia Gfx 1060
+##### * Minimum requirement Nvidia GTX 1060
 
 # Join in the developer group
 
